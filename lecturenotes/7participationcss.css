@@ -1,0 +1,11 @@
+body {
+    background-image: url("images/otto.png");
+
+}
+
+.orangebois{
+        background-color: blueviolet;
+        border: 2px solid #134279;
+        padding: 15px;
+        margin: 20px;
+}

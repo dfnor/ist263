@@ -1,0 +1,136 @@
+body{
+    color: #50577A ;
+    background-color:#EEEEEE ;
+
+}
+
+h1{
+    color:#3C4048;
+}
+
+h2{
+    color:#474E68;
+}
+
+a{
+    color:#404258;
+}
+
+nav{
+    background-color: #D8D8D8;
+    padding: 10px;
+}
+
+nav a{
+    color: #16213E;
+    margin-bottom: 30px;
+}
+
+nav a:hover{
+    color: #0F3460;
+}
+
+.right{
+    float: right;
+    margin-top: 1px;
+    margin-bottom:5px;
+}
+
+.left{
+    float: left;
+    margin-top: 1px;
+    margin-bottom:5px;
+}
+
+hr{
+    margin-bottom:1px ;
+}
+
+.photoshop{
+    float:right;
+    margin-left: 10px;
+    max-width: 100%;
+}
+
+.clear{
+    clear: right;
+}
+
+.flex1, .flex2{
+    display: flex;
+    border-radius: 1em;
+    background-color: #CFD2CF;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+
+.item1a{
+    flex: 1;
+}
+
+.item1b{
+    flex: 1;
+}
+
+.item2a{
+    flex: 1;
+    padding: 20px;
+}
+
+.item2b{
+    flex: 1;
+}
+
+.skills_heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon{
+    width: 55px;
+}
+
+
+.flex2skills, .flex2a, .flex2b{
+    display: flex;
+}
+
+aside{
+    border-radius: 1em;
+    background-color: #D8D8D8;
+    padding: 15px;
+    padding-top:1px;
+    padding-bottom:1px;
+    
+}
+
+.flex2a{
+    flex: 3;
+    justify-content:space-around;
+}
+
+.flex2b{
+    flex: 1;
+    padding: 15px;
+}
+.skills_p{
+    margin: 40px;
+}
+
+.flex2{
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px){
+
+    nav a {
+        display: block;
+        size: 100%;
+    }
+
+    span{
+        display: none;
+    }
+}
