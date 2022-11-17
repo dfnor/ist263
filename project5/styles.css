@@ -1,0 +1,21 @@
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.left, .right{
+    margin: .25em;
+}
+
+body{
+    font-size: 1.05em;
+}
+
+
+footer{
+    background-color: #581f1f;
+}
+
