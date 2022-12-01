@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yup{
+            color:blueviolet;
+        }
+    </style>
+    <script>
+        function colorChange(){
+            document.getElementById("text").style.color = "rgb(155, 102, 102)"; 
+        }
+
+        function colortoChange(){
+            var inputed_text = document.getElementById("_newtext").toLocaleString("en-US");
+            document.getElementById("_newtext").innerHTML = "<span class='yup'>"+inputed_text+"</span>"
+        }
+        
+    </script>
+</head>
+<body>
+    <p id="text" onclick="colorChange();">Hello World</p>
+
+    <p id="_newtext" onclick="colortoChange();">Hello World</p>
+</body>
+</html>
