@@ -8,15 +8,19 @@
 
 .left, .right{
     margin: .25em;
+    padding: .25em;
 }
 
 body{
     font-size: 1.05em;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,Helvetica, Arial,sans-serif;
 }
 
 .box1{
     background-color: #D8D8D8;
-    border: black;
+    border: solid black;
+    border-width: .1em;
+    border-radius: 2em;
 }
 
 
@@ -29,8 +33,34 @@ body{
     flex: 4;
 }
 
+#intro_box{
+    display: flex;
+    flex: 4;
+    margin: 1.2em;
+    padding: 1.5em;
+    text-align: center;
+    justify-content: center;
+    
+}
+
 #box{
-    flex: 1;
+    flex: 3;
+}
+
+#image_box{
+    flex: 2;
+    justify-content: center;
+}
+
+.banner_image{
+    width:20em;
+}
+
+.social_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1
 }
 
 .flex_main{
@@ -48,7 +78,8 @@ body{
 }
 
 h1{
-    color:#3C4048;
+    /* color:#3C4048; */
+    color: black;
 }
 
 a{
@@ -59,5 +90,50 @@ a:hover{
 }
 
 .main{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+}
+
+.social_button{
+    margin: 1.5em;
+    border-color: #0F3460;
+    background-color: aqua;
+    width: 7em;
+    height: 3em;
+    font-size: .8em;
+}
+
+.main_image{
+    width: 30em;
+    float: right;
+}
+
+.main_div{
+    display: flex;
+}
+
+.main_div p {
+    flex: 6;
+    margin: 1em;
+}
+
+.main_image{
+    flex: 2;
+    margin: .5em;
+}
+
+hr{
+    margin: 0;
+}
+
+footer{
+    margin-top: 1em;
+}
+
+.box2{
+    margin-bottom: 3em;
+    margin-left: 1em;
+}
+
+.subheadings{
+    color: black;
 }
