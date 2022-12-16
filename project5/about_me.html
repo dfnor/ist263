@@ -11,9 +11,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap'); </style>
+
+    <style>
+        .center{
+            display: none;
+        }
+        .new_nav{
+            display: none;
+        }
+        
+    </style>
+
+<style>
+    @media only screen and (max-width: 1200px){
+
+        .center{
+            display: block;
+        }
+
+        .flex_main{
+             display: none;
+            }
+            .new_nav{
+                display: flex;
+                margin-top: 2em;
+                display: block;
+                justify-content: space-around;
+                    text-align: center;
+    justify-content: center;
+
+    margin: 1.5em;
+        }
+
+        .new_nav {
+            display: flex;
+            /* flex-direction: row; */
+            /* flex: 1; */
+       
+        }
+
+        .new_nav_div{
+            flex: 1;
+        }
+        /* body {
+            background-color: #000000;
+        } */
+        /* p{
+            color: #ffffff
+        } */
+    }
+    </style>
 </head>
 
-<style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap'); </style>
+
 
 
 <body>
@@ -49,6 +100,7 @@
                     <strong><u>About me</u></strong>
                 </h1>
 
+
                 <br>
 
                 <nav>
@@ -74,6 +126,18 @@
 
         </div>
 
+    </div>
+
+    <h1 class="center">
+        <strong><u>About me</u></strong>
+    </h1>
+
+    <div class="new_nav">
+
+        <div class="new_nav_div"><a href="index.html" >Home</a></div>
+        <div class="new_nav_div"><a href="internship.html">Internship Experience</a></div>
+        <div class="new_nav_div"><a href="projects.html" >Personal Projects</a></div>
+        <div class="new_nav_div"><a href="about_me.html" > About Me</a></div>
     </div>
 
 
@@ -180,8 +244,8 @@
 
     <p class="right">
         <a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a>
-        <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
-        <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a>
+        <!-- <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
+        <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a> -->
     </p>
     
 

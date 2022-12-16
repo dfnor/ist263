@@ -373,3 +373,7 @@ input,select,textarea{
     display: flex;
     flex: 3;
 }
+
+.center{
+    text-align: center;
+}

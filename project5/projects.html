@@ -64,6 +64,64 @@
 
         }
     </script>
+
+<style>
+    .center{
+        display: none;
+    }
+    .new_nav{
+        display: none;
+    }
+    
+</style>
+
+<style>
+    @media only screen and (max-width: 1200px){
+
+        .center{
+            display: block;
+        }
+        .flex_main{
+             display: none;
+            }
+            .new_nav{
+                display: flex;
+                margin-top: 2em;
+                display: block;
+                justify-content: space-around;
+                    text-align: center;
+    justify-content: center;
+
+    margin: 1.5em;
+        }
+
+        .new_nav {
+            display: flex;
+            /* flex-direction: row; */
+            /* flex: 1; */
+       
+        }
+
+        .new_nav_div{
+            flex: 1;
+        }
+        /* body {
+            background-color: #000000;
+        } */
+        /* p{
+            color: #ffffff
+        } */
+    }
+    </style>
+
+<style>
+    @media only screen and (max-width: 1375px){
+
+        /* p{
+            color: #ffffff
+        } */
+    }
+</style>
 </head>
 
 
@@ -91,43 +149,55 @@
         </div>
     </div> -->
 
-<div class="box2">
-    <div class="flex_main">
+    <div class="box2">
+        <div class="flex_main">
 
-        <div id="box">
-            <h1>
-                <strong><u>Projects</u></strong>
-            </h1>
+            <div id="box">
+                <h1>
+                    <strong><u>Projects</u></strong>
+            
+                </h1>
 
-            <br>
+                <br>
 
-            <nav>
-                <div class="flex_links">
-                    <a href="index.html" >Home</a> 
+                <nav>
+                    <div class="flex_links">
+                        <a href="index.html" >Home</a> 
 
-                    <a href="internship.html">Internship Experience</a>
-                </div>
+                        <a href="internship.html">Internship Experience</a>
+                    </div>
 
-                <div class="flex_links">
-                    <a href="projects.html" >Personal Projects</a>
-                    
-                    <a href="about_me.html" > About Me</a>
-                </div>
-            </nav>
+                    <div class="flex_links">
+                        <a href="projects.html" >Personal Projects</a>
+                        
+                        <a href="about_me.html" > About Me</a>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div id="box"></div>
+
+            <div id="box"></div>
+
 
         </div>
-
-        <div id="box"></div>
-
-        <div id="box"></div>
-
-
     </div>
-</div>
 
+    <h1 class="center">
+        <strong><u>Projects</u></strong>
 
+    </h1>
+
+    <div class="new_nav">
+
+        <div class="new_nav_div"><a href="index.html" >Home</a></div>
+        <div class="new_nav_div"><a href="internship.html">Internship Experience</a></div>
+        <div class="new_nav_div"><a href="projects.html" >Personal Projects</a></div>
+        <div class="new_nav_div"><a href="about_me.html" > About Me</a></div>
+    </div>
     
- <main>
+<main>
 
     <div class="slideshow_div">
 
@@ -230,21 +300,15 @@
     </video> -->
 
 
-
-
 <footer>   
     <hr>
-
     <p class="left"> &copy; 2020</p>
     
-
     <p class="right">
         <a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a>
-        <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
-        <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a>
+        <!-- <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
+        <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a> -->
     </p>
-    
-
 </footer>
 
 
