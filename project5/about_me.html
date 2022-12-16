@@ -20,11 +20,62 @@
         .new_nav{
             display: none;
         }
+
+
+
+        .about_image_flex{
+            display: none;
+        }
+
+        .about_flex{
+            display: none;
+        }
+
+        .about_me_image{
+            display: block;
+        }
+
+        
         
     </style>
 
 <style>
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 850px){
+
+        #about_me_image{
+            display: none;
+        }
+
+        .about_image_flex{
+            display: block;
+        }
+
+        .about_flex{
+            display: flex;
+            padding: 3em;
+        }
+
+        .about_image_flex{
+            /* border-radius: 50%; */
+            /* align-self: top;  */
+            /* max-width: 100%; */
+            /* object-fit: cover; */
+            /* width: 65px; */
+            /* height: 65px; */
+            /* max-height: 100%; */
+            /* align-self: center; */
+            /* align-self: center; */
+            /* max-width: 70%; */
+            /* position: absolute; */
+            /* border: .1em solid black; */
+            width: 100%;
+            /* height: 100%; */
+            object-fit: cover;
+            /* margin: 4em; */
+
+            /* text-align: center; */
+    justify-content: center;
+        }
 
         .center{
             display: block;
@@ -140,94 +191,105 @@
         <div class="new_nav_div"><a href="about_me.html" > About Me</a></div>
     </div>
 
+    
+    <div class="about_flex">
+        <img src="../images/edit.png"  alt="edited image of Dexter" class="about_image_flex">
+    </div>    
 
  <main>
 
-
- <div class="aboutme_main">
-
-    
-    <img src="../images/edit.png" class="main_image" alt="edited image of Dexter">
-    
-    
-    
-    
-    <p>
-        My name is Dexter Norales and I hail from the South Bronx. I've always been interested in mathematics and science and I've been blessed to be around people that have fostered my interests - especially from a young age. A notable point in my life would be with my elementary school science teacher by the name of Ms. Hernandez. She was beyond passionate about science and worked very hard to get us resources so that we could learn. Donors Choose, an organization she built a rapport with, would often work with her to get us textbooks, volcano kits, led lights, circuits, and more. Though I wanted to be an arachnologist at the time, I was also interested in robotics. And so, through Donors Choose she got me a robotics kit that I still own today along with the items I made.
-    </p>
-
-    <p>
-        That experience allowed me to start problem-solving from a young age. I personally believe that skill has allowed me to succeed in my future escapades with science and math and by extension - coding. I started to code when I programmed robots in middle school. I coded again in my high school experience with programs like “CodeNow” and “NFTE Startup Summer Tech”. I took coding classes as well, online and in school. Up until my senior year of high school, I felt as though I had a solid foundation in coding and that I was just about competent with my peers. I took a coding class in my second semester of freshman year which changed my view of the world and the possible trajectories that would make my life.
-    </p>
-
-    <p>
-        The class itself wasn’t a life-changing experience though it was a solid class. The class was a python class. Python was a language that I was a bit stubborn to learn. I’ve spent so much time learning HTML, CSS, Javascript, Ruby, Java, and other languages. Why would I need to learn another language that I could possibly replace with something I already knew? Little did I know how powerful of a tool it was - which led to my success in my first internship at Stacker.
-    </p>
-
-
+    <img src="../images/edit.png" class="main_image" id="about_me_image" alt="edited image of Dexter">
     
 
-    <p>
-        Within the summers of 2021 and 2022, I’ve worked for Stacker as an editorial research intern in the Local Team. This was a position I was nervous and even reluctant to take. The CEO of the company, a friend of mine, pushed me to take the job and it’s been a learning experience ever since.
-    </p>
+
+    <div class="aboutme_main">
+
+        
+        
+        
+        
+        
+        
+        <p>
+            My name is Dexter Norales and I hail from the South Bronx. I've always been interested in mathematics and science and I've been blessed to be around people that have fostered my interests - especially from a young age. A notable point in my life would be with my elementary school science teacher by the name of Ms. Hernandez. She was beyond passionate about science and worked very hard to get us resources so that we could learn. Donors Choose, an organization she built a rapport with, would often work with her to get us textbooks, volcano kits, led lights, circuits, and more. Though I wanted to be an arachnologist at the time, I was also interested in robotics. And so, through Donors Choose she got me a robotics kit that I still own today along with the items I made.
+        </p>
+
+        <p>
+            That experience allowed me to start problem-solving from a young age. I personally believe that skill has allowed me to succeed in my future escapades with science and math and by extension - coding. I started to code when I programmed robots in middle school. I coded again in my high school experience with programs like “CodeNow” and “NFTE Startup Summer Tech”. I took coding classes as well, online and in school. Up until my senior year of high school, I felt as though I had a solid foundation in coding and that I was just about competent with my peers. I took a coding class in my second semester of freshman year which changed my view of the world and the possible trajectories that would make my life.
+        </p>
+
+        <p>
+            The class itself wasn’t a life-changing experience though it was a solid class. The class was a python class. Python was a language that I was a bit stubborn to learn. I’ve spent so much time learning HTML, CSS, Javascript, Ruby, Java, and other languages. Why would I need to learn another language that I could possibly replace with something I already knew? Little did I know how powerful of a tool it was - which led to my success in my first internship at Stacker.
+        </p>
 
 
+        
 
-    <div class="clear"></div>
- </div>
+        <p>
+            Within the summers of 2021 and 2022, I’ve worked for Stacker as an editorial research intern in the Local Team. This was a position I was nervous and even reluctant to take. The CEO of the company, a friend of mine, pushed me to take the job and it’s been a learning experience ever since.
+        </p>
 
 
+        <p>
+            I've learned a variety of ways to use Python. I've written scripts that use immense sums of data and organize them through data frames, scripts that scrape websites on all levels of difficulty, and scripts that automize repetitive and particular tasks. Combine those with free time and interest, I’ve been able to write a few of my own scripts for projects that make life easier for me. Feel free to see the <a href="projects.html" >Personal Projects</a> tab for more on that!
+        </p>
 
- <div class="full_contact">
-    <div class="title_div">
-        <h1 class="subtitle_h1"><u>Feel Free to Contact Me</u> :)</h1>
+
+        <div class="clear"></div>
     </div>
 
-    <div class="subtitle_div">
-        <h3 class="subtitle_h3"><a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a></h3>
+
+
+    <div class="full_contact">
+        <div class="title_div">
+            <h1 class="subtitle_h1"><u>Feel Free to Contact Me</u> :)</h1>
+        </div>
+
+        <div class="subtitle_div">
+            <h3 class="subtitle_h3"><a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a></h3>
+        </div>
+        
+        <div class="contact_form">
+            <form action="https://formspree.io/f/moqbkrby" method="POST">
+
+                <div class="form_item1">
+                    <label for="text_field"> What is your name? </label>
+                    <br>
+                    <input type="text" id="text_field" name="text_field_n">
+                </div>
+
+
+
+                <div class="form_item2">
+                    <label for="select_one">What are you looking to speak about?</label> 
+                    <br>
+                    <select id="select_one" name="text_field_n" >
+                        <option value="WDS">Web Design Services</option>
+                        <option value="DAS">Data Analytics Services</option>
+                        <option value="DBS">Database Services</option>
+                        <option value="AS">Automation Services</option>
+                        <option value="O">Other</option>
+                    </select>
+                </div>
+
+                <div class="form_item3">
+                    <label for="text_field_one">Please leave your message below :)</label>  
+                    <br>
+                    <textarea id="text_field_one" name="text_field_n" ></textarea>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="Submit" class="submit_button">
+                </div>
+                
+        
+                <!-- <input type="radio" id="radio_butn" name="text_field_n" value="text_field"> -->
+        
+        
+            </form>
+        </div>
     </div>
-    
-    <div class="contact_form">
-        <form action="https://formspree.io/f/moqbkrby" method="POST">
-
-            <div class="form_item1">
-                <label for="text_field"> What is your name? </label>
-                <br>
-                <input type="text" id="text_field" name="text_field_n">
-            </div>
-
-
-
-            <div class="form_item2">
-                <label for="select_one">What are you looking to speak about?</label> 
-                <br>
-                <select id="select_one" name="text_field_n" >
-                    <option value="WDS">Web Design Services</option>
-                    <option value="DAS">Data Analytics Services</option>
-                    <option value="DBS">Database Services</option>
-                    <option value="AS">Automation Services</option>
-                    <option value="O">Other</option>
-                </select>
-            </div>
-
-            <div class="form_item3">
-                <label for="text_field_one">Please leave your message below :)</label>  
-                <br>
-                <textarea id="text_field_one" name="text_field_n" ></textarea>
-            </div>
-
-
-            <div>
-                <input type="submit" value="Submit" class="submit_button">
-            </div>
-            
-    
-            <!-- <input type="radio" id="radio_butn" name="text_field_n" value="text_field"> -->
-    
-    
-        </form>
-    </div>
- </div>
 
 
 </main>  

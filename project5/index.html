@@ -20,11 +20,54 @@
         .new_nav{
             display: none;
         }
+
+        .hidden{
+            display: none;
+        }
+
+
         
     </style>
 
     <style>
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1075px){
+
+        .empty_div{
+            display: none;
+        }
+
+        .hidden{
+            display: block;
+            display: flex;
+            justify-content: space-between;
+                /* text-align: center;
+    justify-content: center; */
+    margin: 1em;
+
+        }
+
+        .hidden1, .hidden2{
+            display: flex;
+            flex: 1;
+            text-align: center;
+    justify-content: center;
+        }
+
+
+
+        .flex{
+            flex-direction:column;
+        }
+
+        .social_links{
+            display: none;
+        }
+
+        #image_box{
+            display: none;
+        }
+
+        .social_links
 
         .center{
             display: block;
@@ -87,14 +130,23 @@
             <img src="../images/we_work_image.png" alt="Dexter with Brit and Noah" class="banner_image">
             <!-- Professional headshot and socials in progress :) -->
         </p>
-        <div class="social_links">
-            <form action="https://www.linkedin.com/in/dexternorales/" target="_blank">
-                <button type="submit" class="social_button" >LinkedIn</button>
-             </form>
 
-             <form action="https://paidintoken.com/" target="_blank">
-                <button type="submit" class="social_button">PaidinToken</button>
-             </form>
+        <div class="social_links">
+
+            <div class="center_div">
+                <form action="https://www.linkedin.com/in/dexternorales/" target="_blank">
+                    <button type="submit" class="social_button" >LinkedIn</button>
+                 </form>
+            </div>
+
+            <div class="center_div">
+                <form action="https://paidintoken.com/" target="_blank">
+                    <button type="submit" class="social_button">PaidinToken</button>
+                 </form>
+            </div>
+
+
+
 <!-- 
              <form action="https://www.linkedin.com/in/dexternorales/" target="_blank">
                 <button type="submit" class="social_button" >LinkedIn</button>
@@ -102,7 +154,27 @@
              
             
             <!-- <button class="social_button">Instagram</button> -->
+            
+
         </div>
+
+        <div class="hidden">
+            <div class="hidden1">
+                <form action="https://www.linkedin.com/in/dexternorales/" target="_blank">
+                    <button type="submit" class="social_button" >LinkedIn</button>
+                 </form>
+            </div>
+            <div class="hidden2">
+                <form action="https://paidintoken.com/" target="_blank">
+                    <button type="submit" class="social_button">PaidinToken</button>
+                 </form>
+            </div>
+
+    
+
+        </div>
+
+
     </div>
 </div>
 
