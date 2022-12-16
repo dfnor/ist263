@@ -9,20 +9,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap'); </style>
+    <script>
+        function pit_show(){
+            document.getElementById('pit_vid').style.display= 'block';
+            document.getElementById('pit_text').style.display= 'block';
+            document.getElementById('sup_vid').style.display= 'none';
+            document.getElementById('sup_text').style.display= 'none';
+            document.getElementById('ig_png').style.display= 'none';
+            document.getElementById('ig_text').style.display= 'none';
+        }
+
+        function pit_next(){
+            document.getElementById('pit_vid').style.display= 'none';
+            document.getElementById('pit_text').style.display= 'none';
+            document.getElementById('sup_vid').style.display= 'block';
+            document.getElementById('sup_text').style.display= 'block';
+        }
+
+        function pit_last(){
+            document.getElementById('pit_vid').style.display= 'none';
+            document.getElementById('pit_text').style.display= 'none';
+            document.getElementById('ig_png').style.display= 'block';
+            document.getElementById('ig_text').style.display= 'block';
+        }
+
+        function sup_next(){
+            document.getElementById('sup_vid').style.display= 'none';
+            document.getElementById('sup_text').style.display= 'none';
+            document.getElementById('ig_png').style.display= 'block';
+            document.getElementById('ig_text').style.display= 'block';
+        }
+
+        function sup_last(){
+            document.getElementById('sup_vid').style.display= 'none';
+            document.getElementById('sup_text').style.display= 'none';
+            document.getElementById('pit_vid').style.display= 'block';
+            document.getElementById('pit_text').style.display= 'block';
+        }
+
+        function ig_next(){
+            document.getElementById('ig_png').style.display= 'none';
+            document.getElementById('ig_text').style.display= 'none';
+            document.getElementById('pit_vid').style.display= 'block';
+            document.getElementById('pit_text').style.display= 'block';
+
+        }
+        function ig_last(){
+            document.getElementById('ig_png').style.display= 'none';
+            document.getElementById('ig_text').style.display= 'none';
+            document.getElementById('sup_vid').style.display= 'block';
+            document.getElementById('sup_text').style.display= 'block';
+
+        }
+    </script>
 </head>
 
-<style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap'); </style>
 
-<body>
 
-    <div class="box1">
+<body onload="pit_show();">
+
+
+    <!-- <div class="box1">
         <div class="flex">
             <div id="intro_box">
                 <p>My name is Dexter Norales and I am from the south Bronx. I've spent the past 3 years honing in on my career and that had led me to gain skills in projects and in internships. Feel free to read more :)</p>
             </div>
             <p id="image_box">
                 <img src="../images/we_work_image.png" alt="Dexter with Brit and Noah" class="banner_image">
-                <!-- Professional headshot and socials in progress :) -->
+                
             </p>
             <div class="social_links">
                 <form action="https://www.linkedin.com/in/dexternorales/" target="_blank">
@@ -33,51 +89,124 @@
                 <button class="social_button">Instagram</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="box2">
+<div class="box2">
+    <div class="flex_main">
 
- 
+        <div id="box">
+            <h1>
+                <strong><u>Projects</u></strong>
+            </h1>
 
-        <div class="flex_main">
+            <br>
 
-            <div id="box">
-                <h1>
-                    <strong><u>Projects</u></strong>
-                </h1>
+            <nav>
+                <div class="flex_links">
+                    <a href="index.html" >Home</a> 
 
-                <br>
+                    <a href="internship.html">Internship Experience</a>
+                </div>
 
-                <nav>
-                    <div class="flex_links">
-                        <a href="index.html" >Home</a> 
-
-                        <a href="internship.html">Internship Experience</a>
-                    </div>
-
-                    <div class="flex_links">
-                        <a href="projects.html" >Personal Projects</a>
-                        
-                        <a href="about_me.html" > About Me</a>
-                    </div>
-                </nav>
-
-            </div>
-
-            <div id="box"></div>
-
-            <div id="box"></div>
-
+                <div class="flex_links">
+                    <a href="projects.html" >Personal Projects</a>
+                    
+                    <a href="about_me.html" > About Me</a>
+                </div>
+            </nav>
 
         </div>
 
- <br>
- <br>
+        <div id="box"></div>
+
+        <div id="box"></div>
+
+
+    </div>
+</div>
+
 
     
  <main>
 
+    <div class="slideshow_div">
 
+        <div class="slideshow_image">
+
+            <div class="pit_vid" id="pit_vid">
+                <video width="800" autoplay muted loop>
+                    <source src="pit_video.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="sup_vid" id="sup_vid">
+                <video width="800" autoplay muted loop>
+                    <source src="supbot_video.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="ig_png" id="ig_png">
+                <img src="insta_code.png" alt="Recommendation" width="800">
+            </div>
+
+        </div>
+
+        <div class="slideshow_text">
+
+            <div class="pit_text" id="pit_text">
+                <h2><u>PaidinToken</u></h2>
+                <p>In 2022 summer I worked for The Hustle Presents, Stacker Media, and on a project that I had a mind for some time. In November 2021 when I saw that a rapper that I’m a fan of, Moneyman, got paid an advance of $1,000,000 in bitcoin instead of dollars. This made major news and especially interested me as I’m into crypto, money, and Moneyman’s music. Other large payments like these were made and I thought it would be interesting to see whether these payments would be profits or losses for those who made them. </p><br>
+                <p>So after work, I would first start to ideate on who I wanted to include in my list, what research would be needed, and what resources I would use. I then started to build the backend which got the live price of bitcoin and sent it to me on AWS for me to manipulate. I would use this to calculate Javascript. I then set up the domain to be safe for users to use (HTTPS), made the front end look appealing, and launched in August! It’s my most full project and the one I’m most proud of. Fun fact - I have a new front-end coded and ready to be made public soon!</p>
+                <br>
+
+                <p>
+                    <span id="pit_last" onclick="pit_last();" class="space_us"><b><u><i>Last</span></i></u></b></span>
+                    <span id="pit_next" onclick="pit_next();" class="space_us"><b><u><i>Next</span></i></u></b></span>
+                </p>
+
+                <!-- <p id="pit_next" onclick="pit_next();"><b><u><i>Next</i></u></b></p> -->
+            </div>
+
+            <div class="sup_text" id="sup_text">
+                <h2><u>Supreme Bot</u></h2>
+                <p>I wrote this script after I learned how to use Selenium - an automation testing tool. It allows developers like myself to imitate human interactions with a computer. I can imitate clicks, button presses, and even waiting. I learned how to use Selenium while working for Stacker. I had to use it to get data that my traditional methods wouldn’t work on.</p><br>
+                <p>This script works by allowing me to input what item I wanted first and then go for it. Here we can see that I’m looking to get the “Paneled Velour L/S Polo” in black and in a size medium. The bot accepts this input and loads the website searching for the category ( “tops-sweaters”), then clicks through the items in that category until it sees “Velour” which is the keyword I put, selects the right color, and then the right size. The script then checks out and inputs the personal information I put in the earlier code :)</p>
+                <br>
+
+                <p>
+                    <span id="sup_last" onclick="sup_last();" class="space_us"><b><u><i>Last</span></i></u></b></span>
+                    <span id="sup_next" onclick="sup_next();" class="space_us"><b><u><i>Next</span></i></u></b></span>
+                </p>
+
+            
+                <!-- <p id="sup_next" onclick="sup_next();"><b><u><i>Next</i></u></b></p> -->
+            </div>
+
+            <div class="ig_text" id="ig_text">
+                <h2><u>Instagram Bot</u></h2>
+                <p>This Instagram bot is one that I wrote with the intention of seeing what Instagram pages were pages that I followed, pages that followed me, pages that I followed that weren’t following me back, and pages that followed me that I didn’t follow back. I’ve normally used apps in the past that specialize in this. However, I’ve almost lost my accounts for using those apps so I wanted to find an alternative that I made.</p><br>
+                <p>And so, I made this script that does provide this information by putting my following list and follower list in separate lists on my computer. The script would then go through and remove people from the follower list if they existed on the following list - that would show me who I didn’t follow back. It would do the inverse to see who didn’t follow me back. It took a while especially as it’s hard to manage popups and new events at times!</p>
+                <br>
+
+
+                <p>
+                    <span id="ig_last" onclick="ig_last();" class="space_us"><b><u><i>Last</span></i></u></b></span>
+                    <span id="ig_next" onclick="ig_next();" class="space_us"><b><u><i>Next</span></i></u></b></span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+    <!-- <div class="last_next">
+        <p>
+        <span class="last"><b><u><i>Last</i></u></b></span>
+        <span class="next" ><b><u><i>Next</i></u></b></span>
+        </p>
+    </div> -->
+
+<!-- 
     <h3><a href="https://paidintoken.com/" target="_blank"> PaidinToken</a></h3>
 
     <p>
@@ -92,25 +221,31 @@
 
 
     
+    <video width="400" controls autoplay>
+        <source src="supbot_video.mov" type="video/mp4">
+    </video>
+
+    <video width="400" controls autoplay>
+        <source src="new_price.mov" type="video/mp4">
+    </video> -->
+
+
+
+
+<footer>   
+    <hr>
+
+    <p class="left"> &copy; 2020</p>
     
 
+    <p class="right">
+        <a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a>
+        <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
+        <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a>
+    </p>
+    
 
-
-
-    <footer>   
-        <hr>
-
-        <p class="left"> &copy; 2020</p>
-        
-
-        <p class="right">
-            <a href="mailto:dfnorale@syr.edu">Dfnorale@syr.edu</a>
-            <a href="https://www.linkedin.com/in/dexternorales/" target="_blank"> LinkedIn</a>
-            <a href="https://paidintoken.com/" target="_blank"> PaidinToken</a>
-        </p>
-        
-
-    </footer>
+</footer>
 
 
 </body>
